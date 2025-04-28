@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "417da0c2-b784-4c73-a068-6a4e36a1797a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44506207",
+		"_collection_link": "https://donghyun-1127742.postman.co/workspace/Donghyun's-Workspace~b7ca02d3-3afc-4139-896d-38872dca067d/collection/44506207-417da0c2-b784-4c73-a068-6a4e36a1797a?action=share&source=collection_link&creator=44506207"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/users/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"testuser\",\r\n  \"password\": \"1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/users/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/products/create/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1ODYzOTQxLCJpYXQiOjE3NDU4NjM2NDEsImp0aSI6IjczN2Q4OTM0YWJjYjQ1MThhZjE2ZmM3ZGYyMmIwZjQyIiwidXNlcl9pZCI6MX0.nAGXskpQK-eKZKIVeZ_cBgoD-CcOi5QasdrEf2-EQwk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1ODYzOTQxLCJpYXQiOjE3NDU4NjM2NDEsImp0aSI6IjczN2Q4OTM0YWJjYjQ1MThhZjE2ZmM3ZGYyMmIwZjQyIiwidXNlcl9pZCI6MX0.nAGXskpQK-eKZKIVeZ_cBgoD-CcOi5QasdrEf2-EQwk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"새 상품\",\r\n  \"description\": \"이 상품은 정말 좋습니다!\",\r\n  \"price\": 10000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/products/create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/products/list/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/products/list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/products/1/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/products/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/products/1/update/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1ODU4NTMwLCJpYXQiOjE3NDU4NTgyMzAsImp0aSI6Ijg4YWNiNzRjYTM0ZDRlOTZiYmRlZGYyYjE2NTBhNjlhIiwidXNlcl9pZCI6MX0.AAzB_o_ltLJH2JiOXdywirScmOYTtVDtDP2OpcR22GM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1ODU4NTMwLCJpYXQiOjE3NDU4NTgyMzAsImp0aSI6Ijg4YWNiNzRjYTM0ZDRlOTZiYmRlZGYyYjE2NTBhNjlhIiwidXNlcl9pZCI6MX0.AAzB_o_ltLJH2JiOXdywirScmOYTtVDtDP2OpcR22GM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"가위\",\r\n  \"description\": \"가위.\",\r\n  \"price\": 5000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/products/1/update/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						"1",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/products/1/delete/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1ODU4NTMwLCJpYXQiOjE3NDU4NTgyMzAsImp0aSI6Ijg4YWNiNzRjYTM0ZDRlOTZiYmRlZGYyYjE2NTBhNjlhIiwidXNlcl9pZCI6MX0.AAzB_o_ltLJH2JiOXdywirScmOYTtVDtDP2OpcR22GM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1ODU4NTMwLCJpYXQiOjE3NDU4NTgyMzAsImp0aSI6Ijg4YWNiNzRjYTM0ZDRlOTZiYmRlZGYyYjE2NTBhNjlhIiwidXNlcl9pZCI6MX0.AAzB_o_ltLJH2JiOXdywirScmOYTtVDtDP2OpcR22GM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/products/1/delete/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						"1",
+						"delete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:8000/products/1/reserve/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1ODYzOTQxLCJpYXQiOjE3NDU4NjM2NDEsImp0aSI6IjczN2Q4OTM0YWJjYjQ1MThhZjE2ZmM3ZGYyMmIwZjQyIiwidXNlcl9pZCI6MX0.nAGXskpQK-eKZKIVeZ_cBgoD-CcOi5QasdrEf2-EQwk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1ODYzOTQxLCJpYXQiOjE3NDU4NjM2NDEsImp0aSI6IjczN2Q4OTM0YWJjYjQ1MThhZjE2ZmM3ZGYyMmIwZjQyIiwidXNlcl9pZCI6MX0.nAGXskpQK-eKZKIVeZ_cBgoD-CcOi5QasdrEf2-EQwk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/products/1/reserve/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						"1",
+						"reserve",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
